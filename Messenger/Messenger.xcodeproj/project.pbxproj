@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7686844E2A39EA5E009B5071 /* ImagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7686844D2A39EA5E009B5071 /* ImagesManager.swift */; };
+		768684502A3A0083009B5071 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7686844F2A3A0083009B5071 /* DetailsViewController.swift */; };
+		768684532A3A4FDA009B5071 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 768684522A3A4FDA009B5071 /* Realm */; };
+		768684552A3A4FDA009B5071 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 768684542A3A4FDA009B5071 /* RealmSwift */; };
+		768684572A3A5059009B5071 /* MessagesRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768684562A3A5059009B5071 /* MessagesRealm.swift */; };
+		76CEE4F12A38817E00D970A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CEE4F02A38817E00D970A2 /* AppDelegate.swift */; };
+		76CEE4F32A38817E00D970A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CEE4F22A38817E00D970A2 /* SceneDelegate.swift */; };
+		76CEE4F52A38817E00D970A2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CEE4F42A38817E00D970A2 /* ChatViewController.swift */; };
+		76CEE4F82A38817E00D970A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76CEE4F62A38817E00D970A2 /* Main.storyboard */; };
+		76CEE4FD2A38817F00D970A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76CEE4FB2A38817F00D970A2 /* LaunchScreen.storyboard */; };
+		76CEE50D2A38866B00D970A2 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CEE50C2A38866B00D970A2 /* ChatTableViewCell.swift */; };
+		76CEE50E2A38885100D970A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76CEE4F92A38817F00D970A2 /* Assets.xcassets */; };
+		76CEE5112A388CAB00D970A2 /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CEE5102A388CAB00D970A2 /* MessagesManager.swift */; };
+		76CEE5132A388CBC00D970A2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CEE5122A388CBC00D970A2 /* Message.swift */; };
+		76CEE5152A388E8F00D970A2 /* MessagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CEE5142A388E8F00D970A2 /* MessagesViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7686844D2A39EA5E009B5071 /* ImagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesManager.swift; sourceTree = "<group>"; };
+		7686844F2A3A0083009B5071 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		768684562A3A5059009B5071 /* MessagesRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesRealm.swift; sourceTree = "<group>"; };
+		76CEE4ED2A38817E00D970A2 /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CEE4F02A38817E00D970A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76CEE4F22A38817E00D970A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		76CEE4F42A38817E00D970A2 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		76CEE4F72A38817E00D970A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76CEE4F92A38817F00D970A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76CEE4FC2A38817F00D970A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76CEE4FE2A38817F00D970A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76CEE50C2A38866B00D970A2 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		76CEE5102A388CAB00D970A2 /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
+		76CEE5122A388CBC00D970A2 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		76CEE5142A388E8F00D970A2 /* MessagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76CEE4EA2A38817E00D970A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				768684552A3A4FDA009B5071 /* RealmSwift in Frameworks */,
+				768684532A3A4FDA009B5071 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76CEE4E42A38817E00D970A2 = {
+			isa = PBXGroup;
+			children = (
+				76CEE4EF2A38817E00D970A2 /* Messenger */,
+				76CEE4EE2A38817E00D970A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76CEE4EE2A38817E00D970A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76CEE4ED2A38817E00D970A2 /* Messenger.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76CEE4EF2A38817E00D970A2 /* Messenger */ = {
+			isa = PBXGroup;
+			children = (
+				76CEE5042A38859100D970A2 /* App */,
+				76CEE50F2A388C9100D970A2 /* Networking */,
+				76CEE5092A3885C100D970A2 /* Components */,
+				76CEE5052A38859900D970A2 /* Models */,
+				76CEE5062A3885A100D970A2 /* Views */,
+				76CEE5082A3885AD00D970A2 /* ViewModels */,
+				76CEE5072A3885A700D970A2 /* Controllers */,
+				76CEE4FE2A38817F00D970A2 /* Info.plist */,
+			);
+			path = Messenger;
+			sourceTree = "<group>";
+		};
+		76CEE5042A38859100D970A2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				76CEE4F02A38817E00D970A2 /* AppDelegate.swift */,
+				76CEE4F22A38817E00D970A2 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		76CEE5052A38859900D970A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76CEE5122A388CBC00D970A2 /* Message.swift */,
+				768684562A3A5059009B5071 /* MessagesRealm.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		76CEE5062A3885A100D970A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76CEE4F62A38817E00D970A2 /* Main.storyboard */,
+				76CEE4FB2A38817F00D970A2 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		76CEE5072A3885A700D970A2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				76CEE50A2A38863B00D970A2 /* Core */,
+				76CEE50B2A38864400D970A2 /* AdditionalVC */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		76CEE5082A3885AD00D970A2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				76CEE5142A388E8F00D970A2 /* MessagesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		76CEE5092A3885C100D970A2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				76CEE4F92A38817F00D970A2 /* Assets.xcassets */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		76CEE50A2A38863B00D970A2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				76CEE4F42A38817E00D970A2 /* ChatViewController.swift */,
+				7686844F2A3A0083009B5071 /* DetailsViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		76CEE50B2A38864400D970A2 /* AdditionalVC */ = {
+			isa = PBXGroup;
+			children = (
+				76CEE50C2A38866B00D970A2 /* ChatTableViewCell.swift */,
+			);
+			path = AdditionalVC;
+			sourceTree = "<group>";
+		};
+		76CEE50F2A388C9100D970A2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				76CEE5102A388CAB00D970A2 /* MessagesManager.swift */,
+				7686844D2A39EA5E009B5071 /* ImagesManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76CEE4EC2A38817E00D970A2 /* Messenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76CEE5012A38817F00D970A2 /* Build configuration list for PBXNativeTarget "Messenger" */;
+			buildPhases = (
+				76CEE4E92A38817E00D970A2 /* Sources */,
+				76CEE4EA2A38817E00D970A2 /* Frameworks */,
+				76CEE4EB2A38817E00D970A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Messenger;
+			packageProductDependencies = (
+				768684522A3A4FDA009B5071 /* Realm */,
+				768684542A3A4FDA009B5071 /* RealmSwift */,
+			);
+			productName = Messenger;
+			productReference = 76CEE4ED2A38817E00D970A2 /* Messenger.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76CEE4E52A38817E00D970A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					76CEE4EC2A38817E00D970A2 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 76CEE4E82A38817E00D970A2 /* Build configuration list for PBXProject "Messenger" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76CEE4E42A38817E00D970A2;
+			packageReferences = (
+				768684512A3A4FDA009B5071 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 76CEE4EE2A38817E00D970A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76CEE4EC2A38817E00D970A2 /* Messenger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76CEE4EB2A38817E00D970A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76CEE4FD2A38817F00D970A2 /* LaunchScreen.storyboard in Resources */,
+				76CEE50E2A38885100D970A2 /* Assets.xcassets in Resources */,
+				76CEE4F82A38817E00D970A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76CEE4E92A38817E00D970A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76CEE4F52A38817E00D970A2 /* ChatViewController.swift in Sources */,
+				76CEE50D2A38866B00D970A2 /* ChatTableViewCell.swift in Sources */,
+				768684502A3A0083009B5071 /* DetailsViewController.swift in Sources */,
+				768684572A3A5059009B5071 /* MessagesRealm.swift in Sources */,
+				76CEE5152A388E8F00D970A2 /* MessagesViewModel.swift in Sources */,
+				76CEE4F12A38817E00D970A2 /* AppDelegate.swift in Sources */,
+				76CEE5132A388CBC00D970A2 /* Message.swift in Sources */,
+				76CEE5112A388CAB00D970A2 /* MessagesManager.swift in Sources */,
+				76CEE4F32A38817E00D970A2 /* SceneDelegate.swift in Sources */,
+				7686844E2A39EA5E009B5071 /* ImagesManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		76CEE4F62A38817E00D970A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76CEE4F72A38817E00D970A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76CEE4FB2A38817F00D970A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76CEE4FC2A38817F00D970A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76CEE4FF2A38817F00D970A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76CEE5002A38817F00D970A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76CEE5022A38817F00D970A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = THGV2QJ4R5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Messenger/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AleksandrKhristichenko.Messenger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76CEE5032A38817F00D970A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = THGV2QJ4R5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Messenger/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AleksandrKhristichenko.Messenger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76CEE4E82A38817E00D970A2 /* Build configuration list for PBXProject "Messenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76CEE4FF2A38817F00D970A2 /* Debug */,
+				76CEE5002A38817F00D970A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76CEE5012A38817F00D970A2 /* Build configuration list for PBXNativeTarget "Messenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76CEE5022A38817F00D970A2 /* Debug */,
+				76CEE5032A38817F00D970A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		768684512A3A4FDA009B5071 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.40.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		768684522A3A4FDA009B5071 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 768684512A3A4FDA009B5071 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		768684542A3A4FDA009B5071 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 768684512A3A4FDA009B5071 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 76CEE4E52A38817E00D970A2 /* Project object */;
+}
